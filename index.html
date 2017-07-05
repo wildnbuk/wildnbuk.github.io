@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,7 +31,7 @@
 					<ul id="menu" class="nav-menu">
 						<li><a href="#trade">Trade in</a></li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">iPhone<b class="caret"></b></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" href="#">iPhone<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="#ip7">iPhone 7</a></li>
 								<li><a href="#ip7">iPhone 7 Plus</a></li>
@@ -40,7 +41,7 @@
 						</li>
 						<li><a href="mac.html#trade">MacBook</a></li>
 						<li><a href="#acces">Аксессуары</a></li>
-						<li><a href="#">Ремонт</a></li>
+						<li><a href="repair.html#repair">Ремонт</a></li>
 						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
@@ -56,7 +57,7 @@
 				</div>
 				<div class="col-md-4">
 					  <div class="logo-row-addr">
-					  	<a href="#">ул.Пушкинская, д.190, офис 8</a>
+					  	<a href="#contacts">ул.Пушкинская, д.190, офис 8</a>
 					  </div>
 				</div>
 			</div>
@@ -102,7 +103,7 @@
 	</section>
 
 	<section id="trade">
-		<div class="container trade-container">
+		<div class="container trade-container wow slideInUp">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-header trade-header text-center">
@@ -165,13 +166,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div id="ip7" class="buy-box ip7_7p">
+				<div id="ip7" class="buy-box ip7_7p wow slideInLeft">
 					<div class="col-sm-8">
 						<div class="buy-box-info">
 							<h3>Apple iPhone 7 / Apple iPhone 7 Plus</h3>
 							<ul>
-								<li>Apple iPhone 7 32GB - <span>42500</span> ₽</li>
-								<li>Apple iPhone 7 128GB - <span>50000</span> ₽ </li>
+								<li>Apple iPhone 7 32GB - <span>42500</span> ₽ <span class="sale">Акция</span></li>
+								<li>Apple iPhone 7 128GB - <span>50000</span> ₽ <span class="sale">Акция</span></li>
 								<li>Apple iPhone 7 256GB - <span>53500</span> ₽</li>
 							</ul>
 							<ul>
@@ -190,7 +191,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div id="ip7red" class="buy-box ip7_red">
+				<div id="ip7red" class="buy-box ip7_red wow slideInRight">
 					<div class="col-sm-8">
 						<div class="buy-box-info">
 							<h3>Apple iPhone 7 (PRODUCT) RED™ <br>Apple iPhone 7 Plus (PRODUCT) RED™</h3>
@@ -213,7 +214,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div id="ipse" class="buy-box ip_se">
+				<div id="ipse" class="buy-box ip_se wow slideInLeft">
 					<div class="col-sm-8">
 						<div class="buy-box-info">
 							<h3>Apple iPhone SE</h3>
@@ -232,7 +233,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div id="ip6s" class="buy-box ip6s">
+				<div id="ip6s" class="buy-box ip6s wow slideInRight">
 					<div class="col-sm-8">
 						<div class="buy-box-info">
 							<h3>Apple iPhone 6S</h3>
@@ -265,8 +266,11 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<div class="acces-box">
+					<div class="acces-box wow fadeInLeft" data-wow-delay="0.2s">
 						<div class="acces-box-overlay">
+							<h4>Apple EarPods</h4>
+							<p class="buy-acces">Apple EarPods Lightning - 2000 ₽</p>
+							<p class="buy-acces">Apple EarPods 3.5 Jack - 1500 ₽</p>
 							<button>Купить</button>
 						</div>
 						<p>Apple EarPods</p>
@@ -274,8 +278,10 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="acces-box">
+					<div class="acces-box wow fadeInLeft" data-wow-delay="0.4s">
 						<div class="acces-box-overlay">
+							<h4>Apple AirPods</h4>
+							<p class="buy-acces">Apple AirPods - 13500 ₽</p>
 							<button>Купить</button>
 						</div>
 						<p>Apple AirPods</p>
@@ -283,8 +289,10 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="acces-box">
+					<div class="acces-box wow fadeInLeft" data-wow-delay="0.6s">
 						<div class="acces-box-overlay">
+							<h4>Кабель Lightning</h4>
+							<p class="buy-acces">Кабель Lightning - 1500 ₽</p>
 							<button>Купить</button>
 						</div>
 						<p>Кабель Lightning </p>
@@ -292,8 +300,10 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="acces-box">
+					<div class="acces-box wow fadeInLeft" data-wow-delay="0.8s">
 						<div class="acces-box-overlay">
+							<h4>Адаптер USB</h4>
+							<p class="buy-acces">Адаптер USB - 1000 ₽</p>
 							<button>Купить</button>
 						</div>
 						<p>Адаптер USB</p>
@@ -355,6 +365,7 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
     <script>
     	$(document).ready(function(){
       		$('.slider').slick({
@@ -366,6 +377,13 @@
         		dots: true
       });
     });
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
+    <script>
+    	$('.dropdown-toggle').dropdownHover(options);
     </script>
 	<!-- <script type="text/javascript">
 		 $(document).ready(function(){

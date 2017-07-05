@@ -8,39 +8,46 @@
 @black: #000;
 @blue-button: #2277e1;
 
-@font-fase {
-	font-family: 'SF UI Text';
-	src: url(../fonts/sf-ui-text/SF-UI-Text-Regular.ttf);
-	font-weight: normal;
-	font-style: nomral;
+@font-face {
+    font-family: 'SFUIDisplayRegular';
+    src: url('../fonts/SFUIDisplayRegular.eot');
+    src: url('../fonts/SFUIDisplayRegular.eot') format('embedded-opentype'),
+         url('../fonts/SFUIDisplayRegular.woff2') format('woff2'),
+         url('../fonts/SFUIDisplayRegular.woff') format('woff'),
+         url('../fonts/SFUIDisplayRegular.ttf') format('truetype'),
+         url('../fonts/SFUIDisplayRegular.svg#SFUIDisplayRegular') format('svg');
 }
-
-@font-fase {
-	font-family: 'SF UI Text';
-	src: url(../fonts/sf-ui-text/SF-UI-Text-Semibold.ttf);
-	font-weight: bold;
-	font-style: nomral;
+@font-face {
+    font-family: 'SFUITextLight';
+    src: url('fonts/SFUITextLight.eot');
+    src: url('fonts/SFUITextLight.eot') format('embedded-opentype'),
+         url('fonts/SFUITextLight.woff2') format('woff2'),
+         url('fonts/SFUITextLight.woff') format('woff'),
+         url('fonts/SFUITextLight.ttf') format('truetype'),
+         url('fonts/SFUITextLight.svg#SFUITextLight') format('svg');
 }
-
-@font-fase {
-	font-family: 'SF UI Text';
-	src: url(../fonts/sf-ui-text/SF-UI-Text-Light.ttf);
-	font-weight: lighter;
-	font-style: nomral;
+@font-face {
+    font-family: 'SFUITextBold';
+    src: url('fonts/SFUITextBold.eot');
+    src: url('fonts/SFUITextBold.eot') format('embedded-opentype'),
+         url('fonts/SFUITextBold.woff2') format('woff2'),
+         url('fonts/SFUITextBold.woff') format('woff'),
+         url('fonts/SFUITextBold.ttf') format('truetype'),
+         url('fonts/SFUITextBold.svg#SFUITextBold') format('svg');
 }
 
 .sf-reg {
-	font-family: 'SF UI Text';
-	font-weight: nomral;
+	font-family: 'SFUIDisplayRegular';
+	font-weight: normal;
 }
 
 .sf-bold {
-	font-family: 'SF UI Text';
+	font-family: 'SFUITextBold';
 	font-weight: bolder;
 }
 
 .sf-light {
-	font-family: 'SF UI Text';
+	font-family: 'SFUITextLight';
 	font-weight: lighter;
 }
 
@@ -123,13 +130,13 @@ button {
 		}
 	}
 }
-.dropdown {
-	&:hover {
-		.dropdown-menu {
-			display: block;
-		}
-	}
-}
+// .dropdown {
+// 	&:hover {
+// 		.dropdown-menu {
+// 			display: block;
+// 		}
+// 	}
+// }
 
 .logo-row {
 	display: flex;
@@ -523,11 +530,19 @@ button {
 		position: absolute;
 		height: 100%;
 		width: 100%;
-		background-color: rgba(0,0,0,.5);
+		background-color: @white;
 		z-index: 10;
 		-webkit-transition: opacity 0.2s;
 		-o-transition: opacity 0.2s;
 		transition: opacity 0.2s;
+		h4 {
+			margin-top: 20px;
+			text-align: center;
+		}
+		.buy-acces {
+			.sf-light;
+			font-size: 14px;
+		}
 		button {
 			height: 50px;
 			width: 126px;
@@ -537,7 +552,7 @@ button {
 			-ms-transform: translateX(-63px);
 			-o-transform: translateX(-63px);
 			transform: translateX(-63px);
-			top: 40%;
+			top: 70%;
 			border-radius: 5px;
 			background-color: @red;
 			border: none;
@@ -588,5 +603,25 @@ button {
 	margin-left: 15px;
 }
 
+#repair {
+	padding-top: 5%;
+	background-color: @white;
+}
+
+.sale {
+	margin-left: 5px;
+	position: absolute;
+	border: 1px solid @red;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	background-color: @red;
+	color: @white !important;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 15px;
+}
 
 
