@@ -65,6 +65,7 @@ button:focus {
 }
 .nav {
   position: fixed;
+  height: auto;
   left: 0;
   background-color: rgba(242, 242, 242, 0.99);
   z-index: 99;
