@@ -523,12 +523,17 @@ button:focus {
   font-weight: normal;
   font-size: 20px;
 }
+.vidjets {
+  position: relative;
+}
 .inst {
   display: inline-block;
 }
 .vk {
   display: inline-block;
   margin-left: 15px;
+  position: absolute;
+  top: 3px;
 }
 #repair {
   padding-top: 5%;
