@@ -179,6 +179,18 @@ button {
 			.sf-reg;
 			font-size: 40px;
 			color: @black;
+			span {
+				border: 1px solid gray;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-o-border-radius: 5px;
+				border-radius: 5px;
+				padding: 5px;
+				padding-top: 0;
+				padding-bottom: 0;
+				font-size: 30px;
+			}
 		}
 		p {
 			.sf-light;
@@ -189,6 +201,7 @@ button {
 			}
 		}
 		button {
+			margin-top: 50px;
 			margin-top: 10px;
 			.sf-light;
 			padding: 10px 30px;
@@ -201,7 +214,9 @@ button {
 			font-size: 16px;
 			border: none;
 			color: @white;
-			&:hover {
+			&:hover, &:visited, &:focus {
+				outline: none;
+				text-decoration: none;
 				background-color: lighten(@blue-button, 5%);
 			}
 		}
@@ -632,6 +647,57 @@ button {
 	padding-left: 5px;
 	padding-right: 5px;
 	font-size: 15px;
+}
+#modal-se {
+	font-size: 20px;
+	.sf-light;
+	h2 {
+		.sf-bold;
+		text-align: center;
+		margin-bottom: 10%;
+		span {
+			.sf-reg;
+			padding-left: 3px;
+			padding-right: 3px;
+			font-size: 25px;
+			border: 1px solid gray;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			border-radius: 5px;
+		}
+	}
+	img {
+		position: relative;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	.modal-text {
+		padding-top: 5%;
+		.sf-light;
+		font-size: 20px;
+	}
+	.se-design {
+		width: 100%;
+	}
+	p {
+		font-size: 20px;
+		span {
+			margin: 10px;
+			display: block;
+			text-align: center;
+			font-size: 30px;
+			.sf-bold;
+		}
+	}
+}
+#modal-trade {
+	.sf-light;
+	font-size: 20px;
 }
 
 

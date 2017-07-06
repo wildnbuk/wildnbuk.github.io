@@ -81,9 +81,9 @@
 						<div class="slider-slide slide2">
 							<div class="col-md-5 col-md-offset-7">
 								<div class="slider-title">
-									<h2>iPhone 7 Plus</h2>
-									<p>Принципиально новый <span>и максимально мощный</span></p>
-									<button>Подробнее ></button>
+									<h2>TRADE IN</h2>
+									<p>Сдай свой старый Apple iPhone <span>и получи скидку на новый!</span></p>
+									<button type="button" id="trade-btn" href="#trade">Подробнее ></button>
 								</div>
 							</div>
 						</div>
@@ -405,6 +405,15 @@
 	<div id="vk_community_messages"></div>
 	<script type="text/javascript">
 	VK.Widgets.CommunityMessages("vk_community_messages", 48201320, {expandTimeout: "30000",tooltipButtonText: "Есть вопрос?"});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#trade-btn').click(function(){
+				var id = $(this).attr('href'),
+					to = $(id).offset().top;
+				$('body').animate({scrollTop: to}, 1000);
+			})
+		})
 	</script>
 	<!-- <script type="text/javascript">
 		 $(document).ready(function(){

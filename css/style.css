@@ -138,6 +138,18 @@ button:focus {
   font-size: 40px;
   color: #000000;
 }
+.slider-title h2 span {
+  border: 1px solid gray;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 30px;
+}
 .slider-title p {
   font-family: 'SFUITextLight';
   font-weight: lighter;
@@ -148,6 +160,7 @@ button:focus {
   display: block;
 }
 .slider-title button {
+  margin-top: 50px;
   margin-top: 10px;
   font-family: 'SFUITextLight';
   font-weight: lighter;
@@ -162,7 +175,11 @@ button:focus {
   border: none;
   color: #ffffff;
 }
-.slider-title button:hover {
+.slider-title button:hover,
+.slider-title button:visited,
+.slider-title button:focus {
+  outline: none;
+  text-decoration: none;
   background-color: #3885e4;
 }
 .slider .slide1 {
@@ -557,4 +574,61 @@ button:focus {
   padding-left: 5px;
   padding-right: 5px;
   font-size: 15px;
+}
+#modal-se {
+  font-size: 20px;
+  font-family: 'SFUITextLight';
+  font-weight: lighter;
+}
+#modal-se h2 {
+  font-family: 'SFUITextBold';
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 10%;
+}
+#modal-se h2 span {
+  font-family: 'SFUIDisplayRegular';
+  font-weight: normal;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 25px;
+  border: 1px solid gray;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+#modal-se img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#modal-se .modal-text {
+  padding-top: 5%;
+  font-family: 'SFUITextLight';
+  font-weight: lighter;
+  font-size: 20px;
+}
+#modal-se .se-design {
+  width: 100%;
+}
+#modal-se p {
+  font-size: 20px;
+}
+#modal-se p span {
+  margin: 10px;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'SFUITextBold';
+  font-weight: bolder;
+}
+#modal-trade {
+  font-family: 'SFUITextLight';
+  font-weight: lighter;
+  font-size: 20px;
 }

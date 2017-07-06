@@ -83,16 +83,16 @@
 								<div class="slider-title">
 									<h2>TRADE IN</h2>
 									<p>Сдай свой старый Apple iPhone <span>и получи скидку на новый!</span></p>
-									<button>Подробнее ></button>
+									<button type="button" id="trade-btn" href="#trade">Подробнее ></button>
 								</div>
 							</div>
 						</div>
 						<div class="slider-slide slide3">
 							<div class="col-md-5 col-md-offset-7">
 								<div class="slider-title">
-									<h2>iPhone SE</h2>
+									<h2>iPhone <span>SE</span></h2>
 									<p>Малая форма <span>в своей лучшей форме.</span></p>
-									<button>Подробнее ></button>
+									<button data-toggle="modal" data-target="#modal-se">Подробнее ></button>
 								</div>
 							</div>
 						</div>
@@ -149,7 +149,7 @@
 							</tr>
 						</table>
 					</div>
-					<button class="trade-btn">Узнать больше ></button>
+					<button class="trade-btn" data-toggle="modal" data-target="#modal-trade">Узнать больше ></button>
 				</div>
 			</div>
 		</div>
@@ -358,6 +358,55 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Modals -->
+<div class="modal fade" id="modal-se" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel">iPhone SE</h4>
+      </div> -->
+      <div class="modal-body">
+      	<h2>iPhone <span>SE</span></h2>
+        <img src="img/buy-box/se.png" alt="iphone se">
+		<p class="modal-text">Представляем iPhone SE — самый мощный 4‑дюймовый смартфон в истории. Чтобы создать его, мы взяли за основу полюбившийся дизайн и полностью поменяли содержание. Установили тот же передовой процессор A9, что и на iPhone 6s, и камеру 12 Мп для съёмки невероятных фотографий и видео 4K. А благодаря Live Photos любой ваш снимок буквально оживёт. Результат? Небольшой iPhone с огромными возможностями.</p>
+        <img class="se-design" src="img/se-design.png" alt="iphone se">
+        <p><span>Любимый дизайн. И новые причины его полюбить.</span>
+		iPhone SE — это не просто невероятно популярный дизайн. Это следующий шаг в его развитии. Корпус лёгкого, компактного и удобного телефона сделан из гладкого матированного алюминия. На великолепном 4‑дюймовом дисплее Retina всё выглядит невероятно чётко и ярко. А завершают картину матовые скошенные края и логотип из нержавеющей стали.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal TRADE IN -->
+<div class="modal fade" id="modal-trade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">TRADE IN</h4>
+      </div>
+      <div class="modal-body">
+        <p>Трейд-ин — это услуга, с помощью которой вы сможете обменять ваш старый Apple iPhone на новый с доплатой.
+		Как происходит обмен:</p>
+		<ul>
+			<li>Вы приносите ваш старый iPhone к нам.</li>
+			<li>Мы оцениваем работоспособность и внешний вид устройства.</li>
+			<li>Оценочная стоимость вашего устройства — это скидка на любой iPhone, представленный в нашем магазине.</li>
+			<li>Вы отдаёте свою старую технику, доплачиваете разницу и забираете новенький гаджет!</li>
+			<li>Мы бесплатно перенесем всю информацию с вашего старого iPhone на новый!</li>
+		</ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
 	
 
 
@@ -370,7 +419,7 @@
     <script>
     	$(document).ready(function(){
       		$('.slider').slick({
-        		autoplay: true,
+        		autoplay: false,
         		arrows: true,
         		prevArrow: '<i class="fa slider-arrows arrow-left fa-chevron-left"></i>',
         		nextArrow: '<i class="fa slider-arrows arrow-right fa-chevron-right"></i>',
@@ -392,6 +441,15 @@
 	<div id="vk_community_messages"></div>
 	<script type="text/javascript">
 	VK.Widgets.CommunityMessages("vk_community_messages", 48201320, {expandTimeout: "30000",tooltipButtonText: "Есть вопрос?"});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#trade-btn').click(function(){
+				var id = $(this).attr('href'),
+					to = $(id).offset().top;
+				$('body').animate({scrollTop: to}, 1000);
+			})
+		})
 	</script>
 	<!-- <script type="text/javascript">
 		 $(document).ready(function(){
