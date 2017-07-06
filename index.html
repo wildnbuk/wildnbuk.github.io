@@ -269,8 +269,8 @@
 					<div class="acces-box wow fadeInLeft" data-wow-delay="0.2s">
 						<div class="acces-box-overlay">
 							<h4>Apple EarPods</h4>
-							<p class="buy-acces">Apple EarPods Lightning - 2000 ₽</p>
-							<p class="buy-acces">Apple EarPods 3.5 Jack - 1500 ₽</p>
+							<p class="buy-acces">Apple EarPods Lightning - <span>2000</span> ₽</p>
+							<p class="buy-acces">Apple EarPods 3.5 Jack - <span>1500</span> ₽</p>
 							<button>Купить</button>
 						</div>
 						<p>Apple EarPods</p>
@@ -281,7 +281,7 @@
 					<div class="acces-box wow fadeInLeft" data-wow-delay="0.4s">
 						<div class="acces-box-overlay">
 							<h4>Apple AirPods</h4>
-							<p class="buy-acces">Apple AirPods - 13500 ₽</p>
+							<p class="buy-acces">Apple AirPods - <span>13500</span> ₽</p>
 							<button>Купить</button>
 						</div>
 						<p>Apple AirPods</p>
@@ -292,7 +292,7 @@
 					<div class="acces-box wow fadeInLeft" data-wow-delay="0.6s">
 						<div class="acces-box-overlay">
 							<h4>Кабель Lightning</h4>
-							<p class="buy-acces">Кабель Lightning - 1500 ₽</p>
+							<p class="buy-acces">Кабель Lightning - <span>1500</span> ₽</p>
 							<button>Купить</button>
 						</div>
 						<p>Кабель Lightning </p>
@@ -303,7 +303,7 @@
 					<div class="acces-box wow fadeInLeft" data-wow-delay="0.8s">
 						<div class="acces-box-overlay">
 							<h4>Адаптер USB</h4>
-							<p class="buy-acces">Адаптер USB - 1000 ₽</p>
+							<p class="buy-acces">Адаптер USB - <span>1000</span> ₽</p>
 							<button>Купить</button>
 						</div>
 						<p>Адаптер USB</p>
@@ -386,6 +386,13 @@
     <script>
     	$('.dropdown-toggle').dropdownHover(options);
     </script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
+
+	<!-- VK Widget -->
+	<div id="vk_community_messages"></div>
+	<script type="text/javascript">
+	VK.Widgets.CommunityMessages("vk_community_messages", 48201320, {expandTimeout: "30000",tooltipButtonText: "Есть вопрос?"});
+	</script>
 	<!-- <script type="text/javascript">
 		 $(document).ready(function(){
 		    $("#menu").on("click","a", function (event) {

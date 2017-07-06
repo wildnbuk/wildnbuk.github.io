@@ -476,6 +476,9 @@ button:focus {
   font-weight: lighter;
   font-size: 14px;
 }
+.acces-box-overlay span {
+  color: #db372f;
+}
 .acces-box-overlay button {
   height: 50px;
   width: 126px;
